@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>layout</title>
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    
+</head>
+
+<body>
+    <header>
+        <div class="headwrap">
+            <div class="logo">
+                <img src="images/logo.png" width="70" height="70">
+            </div>
+            <div class="hyperlink">
+                <ul>
+                    <li>
+                        <a href="">Github</a>
+                    </li>
+                    <li>
+                        <a href="">Register</a>
+                    </li>
+                    <li>
+                        <a href="">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="bannerwrap">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+
+        </div>
+        <div class="navwrap">
+            <nav>
+                <ul>
+                    <li class="navli">HOME</li>
+                    <li class="navli">PROFILE</li>
+                    <li class="navli">ABOUT</li>
+                </ul>
+            </nav>
+        </div>
+        <section>
+            <article>
+                <div>This is Content 1</div>
+                <div>Maybe Content 2</div>
+                <div>Content 3</div>
+                <div>Content 4</div>
+                <div>Content 5</div>
+                <div>Content 6</div>
+                <div>Content 7</div>
+                <div>Content 8</div>
+                <div>Content 9</div>
+                <div>Content 10</div>
+            </article>
+        </section>
+    </main>
+    <footer>&copy; 2018 dl</footer>
+    <script type="text/javascript">
+        $(function() {
+            $('.navli').click(function() {
+                $(this).removeClass('navli');
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+                $(this).siblings().addClass('navli');
+            });
+        });
+    </script>
+</body>
+
+</html>
