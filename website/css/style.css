@@ -397,7 +397,8 @@ header {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 58px;
+    max-width: 1000px;
+    margin: 58px auto;
     
 }
 .img-wrap:hover .img-hover {
